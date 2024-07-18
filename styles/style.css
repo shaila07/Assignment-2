@@ -1,0 +1,28 @@
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+/* header styles */
+
+/* nav styles */
+nav>h3{
+    color: #E6533C;
+}
+ul,.nav-link{
+    text-decoration: none;
+    color: white;
+}
