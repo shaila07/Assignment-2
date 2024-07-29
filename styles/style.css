@@ -23,7 +23,6 @@
   }
   .content{
     margin: 20px 200px;
-    /* border: 5px solid yellow; */
   }
   .btn-primary{
     background-color: rgba(230, 83, 60, 1);
@@ -230,6 +229,9 @@ select{
   left: 10px;
   bottom: 10px;
 }
+.name-text>p{
+ font-weight: 300;
+}
 /* footer styles */
 footer{
   background-color: rgb(31, 31, 31);
@@ -258,3 +260,41 @@ footer{
   font-weight: 200;
   text-align: center;
 }
+
+/* responsive for small devices */
+@media screen and (max-width:576px) {
+  .content{
+    margin: 20px;
+  }
+  .nav-item{
+    display:none;
+  }
+  .banner-content{
+    display: block;
+    gap: 0px;
+    justify-content: center;
+  }
+  .pictures,.Run-content,.calculator-content{
+    display: block;
+  }
+  .pic-run{
+    margin: 0px;
+  justify-content: center;}
+  .pic-run>img{
+    margin-top: 30px;
+    height: 300px;
+    width: 410px;
+    justify-content: center;  
+  }
+th,td{
+  width: 300px;
+  }
+}
+.trainers{
+  grid-template-columns: repeat(1,1fr);
+}
+.footer-content{
+  display: block;
+  padding-left: 20px;
+}
+.fitness{width: 100%;}
