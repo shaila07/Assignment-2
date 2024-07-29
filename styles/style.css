@@ -1,28 +1,235 @@
-
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700px;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-/* shared styles */
-.display-flex{
-    display: flex;
-}
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  /* shared styles */
+  .display-flex{
+      display: flex;
+  }
+  .description{
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.5);
+    margin:10px 0px 50px 0px;
+  }
+  body{
+      background-color: black;
+      color: white;
+      justify-content: center;
+      align-items: center;
+  }
+  .content{
+    margin: 20px 200px;
+    /* border: 5px solid yellow; */
+  }
+  .btn-primary{
+    background-color: rgba(230, 83, 60, 1);
+    color:white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 40px ;
+  }
+  .btn-secondary{
+    width: 200px;
+    height: 50px;
+    border-radius: 40px ;}
+  /* header styles */
 
-body{
-    background-color: black;
-    color: white;
-}
-/* header styles */
-
-/* nav styles */
-nav>h3{
+  /* nav styles */
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav>h3{
+    font-size: 36px;
     color: #E6533C;
-}
-ul,.nav-link{
+  }
+  .nav-links{
+    padding: 0px;
+  }
+  a{
+    font-weight: 400;
     text-decoration: none;
     color: white;
+  }
+.nav-item{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-left: 30px;
+    height: 30px;
+    width: 80px;
+}
+.one{
+  background-color: rgba(230, 83, 60, 1);
+  border-radius: 20px;
+  
+}
+/* banner styles */
+.banner{
+  margin-bottom: 100px;
+}
+.banner-content{
+  gap: 120px;
+  justify-content: space-between;
+}
+.banner-title{
+    font-size: 78px;
+    font-weight: bolder;
+}
+.miama-font{
+  font-family: 'Miama', sans-serif;
+  line-height: 0%;
+  font-weight: 80;
+  font-size: 150px;
+}
+
+/* main styles */
+
+ .section-title{
+  font-size: 50px;
+  font-weight: 900;
+ }
+/* section habits styles */
+.habits{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pictures{
+  justify-content: center;
+  align-items: center;
+}
+.pic-items{
+  justify-content: center;
+  text-align: center;
+}
+.pic-item{
+  border-radius: 200px;
+}
+
+/* section run styles */
+.Run{
+  align-items: center;
+  background-color:rgb(42, 42, 42);
+  border-radius: 20px;
+}
+.Run-content{
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  
+}
+.pic-run{
+  margin:0px 0px 0px 150px;
+}
+.crop{
+  border-radius: 20px;
+  object-fit: none;
+  object-position: 68% 33%;
+}
+
+
+/* section BMI styles */
+
+.calculator{
+  background-color: rgb(31, 31, 31);
+  justify-content: center;
+}
+.calculator-content{
+  justify-content: space-between;
+}
+tr{
+  text-align: center;
+}
+th{
+  height: 50px;
+  width: 150px;
+  border: 2px solid rgba(255, 255, 255, 0.361);
+}
+td{
+  font-weight: 200;
+  height: 50px;
+  width: 150px;
+  border: 2px solid rgba(255, 255, 255, 0.361);
+  color: rgba(255, 255, 255, 0.728);
+}
+input{
+  color: rgba(255, 255, 255, 0.51);
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgb(66, 66, 66);
+  height: 50px;
+  width: 300px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.f{
+  width: 635px;
+}
+.BMI-form>.description{
+  width: 620px;
+}
+.BMI-form>button{
+  margin: 20px 0px;
+  text-align: center;
+}
+/* section Team styles */
+
+.Team{
+  text-align: center;
+}
+.trainers{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  background-color: rgb(33, 33, 33);
+  border: 0px;
+  border-radius: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+.card>img{
+  height: 280px;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+.name-text{
+  text-align: left;
+  top: 20px;
+  
+}
+/* footer styles */
+footer{
+  background-color: rgb(31, 31, 31);
+  padding: 30px 0px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.306);
+}
+.fitness{
+  width: 40%;
+}
+.footer-column>h1>i{
+  color: #E6533C;
+  font-size: 60px;
+}
+.footer-column>p{
+  font-size: larger;
+  font-weight: 200;
+}
+.right{
+  color: rgba(255, 255, 255, 0.554);
+  font-weight: 200;
+  text-align: center;
 }
