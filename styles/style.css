@@ -23,7 +23,7 @@
   }
   .content{
     margin: 20px 200px;
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
   }
   .btn-primary{
     background-color: rgba(230, 83, 60, 1);
@@ -37,6 +37,10 @@
     width: 200px;
     height: 50px;
     border-radius: 40px ;}
+
+  .habits,.Run,.BMI,.Team,Footer{
+    margin-top: 100px;
+  }
   /* header styles */
 
   /* nav styles */
@@ -122,7 +126,7 @@
 .Run-content{
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 35px;
 }
 .pic-run{
   margin:0px 0px 0px 150px;
@@ -136,17 +140,15 @@
 /* section BMI styles */
 .BMI{
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
+
 .calculator{
   background-color: rgb(31, 31, 31);
   justify-content: center;
 }
 .calculator-content{
   justify-content: space-between;
-}
-tr{
-  text-align: center;
 }
 th{
   height: 50px;
@@ -168,7 +170,8 @@ form{
   grid-template-columns: repeat(2,1fr);
 }
 input,select{
-  
+  color: white;
+  font-size: 15px;
   border: 0px;
   border-radius: 10px;
   background-color: rgb(66, 66, 66);
@@ -183,8 +186,11 @@ input,select{
 select{
  color: rgb(120, 120, 120);
 }
-
+.BMI-form>h1{
+  text-align: left;
+}
 .BMI-form>.description{
+  text-align: left;
   width: 620px;
 }
 .BMI-form>button{
@@ -205,17 +211,24 @@ select{
   border-radius: 20px;
   justify-content: space-around;
   padding: 20px;
+  
 
+}
+.card{
+  position: relative;
 }
 .card>img{
   height: 280px;
   width: 100%;
   border-radius: 20px;
-  position: relative;
+
 }
 .name-text{
+  position: absolute;
   text-align: left;
-  top: 20px;
+  line-height: 10px;
+  left: 10px;
+  bottom: 10px;
 }
 /* footer styles */
 footer{
