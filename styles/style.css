@@ -405,10 +405,8 @@ footer {
     width: 100%;
   }
 
-  .BMI-form{
-    border: 2px solid red;
-    }
   
+
   .trainers{
     grid-template-columns: repeat(1, 1fr);
   }
