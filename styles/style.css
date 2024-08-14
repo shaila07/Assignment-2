@@ -320,22 +320,39 @@ select {
   border-radius: 20px;
   margin-top: 100px;
   text-align: center;
-  padding-top: 10px;
-  h1{font-size: 40px;}
+  padding: 20px;
+  h1{
+    font-size: 40px;
+    padding: 0px 80px 20px 80px;
+    b{
+      color: #E6533C;
+      font-size: 60px;
+    }
+  }
   h2{
-    font-size: 30px;
-    font-weight: 300;
-    margin-left: 5px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 10px;
   }
 }
 .facts-content{
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: left;
+  line-height: 5px;
+  div>div>p{
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 10px;
+  }
 }
-.facts-content>div{align-items: center;}
-.facts-content>div:hover{
-  transform:scale(1);
+.facts-content>div{
   padding: 20px;
+  align-items: center;
+  background-color: rgb(66, 66, 66);
+  border-radius: 20px;
+}
+.facts-content>div:hover{
+  transform:scale(1.2);
   border-radius: 20px;
   background-color: #ff994b;
 }
@@ -431,19 +448,21 @@ footer {
     width: 100%;
   }
 
-  
-
   .trainers{
     grid-template-columns: repeat(1, 1fr);
   }
+
   .Facts{
     text-align: left;
+    h1{padding: 0px;}
   }
+
   .facts-content{
     display: block;
-    margin-left: 20px;
-    h2{margin-left: 10px;}
+    div{margin-top:10px}
+    
   }
+
   .footer-content {
     display: block;
     padding-left: 20px;
